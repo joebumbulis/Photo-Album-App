@@ -1,1 +1,13 @@
+@import "node_modules/bourbon-neat/core/_neat.scss";
+@import "vars";
+@import "header";
+@import 'footer';
+@import "album-page";
+@import "pictures-page";
+@import "pic-page";
 
+
+body {
+  background: $color-primaryBackground;
+  // @include grid-visual;
+}

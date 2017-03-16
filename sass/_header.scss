@@ -1,0 +1,13 @@
+header {
+  box-sizing: border-box;
+  background: $color-third;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: $color-primary;
+  font-family: $secondary-font;
+  font-size: 2.5rem;
+}

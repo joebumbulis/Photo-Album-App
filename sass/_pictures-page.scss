@@ -1,0 +1,44 @@
+.photos-page {
+  // display: none;
+};
+
+.sidebar-list {
+  margin-top: 9rem;
+  list-style: none;
+  text-align: center;
+  padding-left: .5rem;
+};
+
+.sidebar-list * {
+  width: 85%;
+  background: $color-five;
+  margin: .7rem 0 0 0;
+  color: $color-primary;
+  padding: 1rem;
+};
+
+.sidebar {
+  width: 17%;
+  length: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: $color-secondary;
+  z-index: -1;
+};
+
+.photos-container {
+  margin-left: 17%;
+  @include grid-container;
+  // @include grid-visual;
+}
+
+.photo-container {
+  list-style: none;
+  @include grid-column(4);
+  background: $color-five;
+  margin-top: 1rem;
+};
+
+//create 18 total image containers with images (3 images per section so you can hide each section tied to a left side button)
