@@ -1,8 +1,8 @@
 .pic-page {
-  // display: none;
+  display: none;
   @include grid-container;
   // @include grid-visual;
-  background: $color-primary;
+  background: linear-gradient($color-primary, $color-five);
   bottom: 0;
 }
 
@@ -12,24 +12,26 @@
 }
 
 .backBtn {
-  background: $color-five;
+  background: linear-gradient(to right, $color-four, $color-third);
   background-size: contain;
   color: $color-primary;
   width: 20%;
   margin: 2rem 1rem 0 3rem;
   float: left;
   padding: .5rem;
+  border: solid .09rem $color-secondary;
   border-radius: 5rem;
 }
 
 .fa-chevron-left {
   margin-right: 1rem;
+  color: $color-five;
 }
 
 h4 {
   display: inline-block;
-  margin: 1rem 0 2rem -14rem;
-  color: $color-five;
+  margin: 1rem 0 2rem -19rem;
+  color: $color-third;
   font-family: $secondary-font;
   font-size: 3rem;
 }
