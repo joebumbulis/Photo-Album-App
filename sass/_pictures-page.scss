@@ -1,30 +1,38 @@
 .photos-page {
-  // display: none;
+
+}
+
+.album-container {
+  display: none
 };
 
-.streetart {
-  // display: none;
-};
+.album-container.selected {
+  display: block;
+}
 
-.space {
-  display: none;
-};
-
-.light {
-  display: none;
-};
-
-.landscape {
-  display: none;
-};
-
-.womensday {
-  display: none;
-};
-
-.animals {
-  display: none;
-};
+// .street-art {
+//   display: block;
+// };
+//
+// .space {
+//   display: none;
+// };
+//
+// .light {
+//   display: none;
+// };
+//
+// .landscape {
+//   display: none;
+// };
+//
+// .womensday {
+//   display: none;
+// };
+//
+// .animals {
+//   display: none;
+// };
 
 .sidebar-list {
   margin-top: 9rem;
@@ -40,6 +48,7 @@
   color: $color-primary;
   padding: 1rem;
 };
+
 
 .sidebar {
   width: 17%;

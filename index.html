@@ -12,33 +12,33 @@
 
 <body>
     <main>
-        <section class="album-page">
+      <!-- Page One: Album Page             -->
+        <section class="page selected album-page">
             <header>
-                <h1>My Albums</h1>
+                <h1>Joe's Albums</h1>
             </header>
-            <!-- Page One: Album Page             -->
             <ul class="album-list">
-                <li class="photo-container">
+                <li id="streetart" class="album-pic-container">
                     <img class="album-img" src="imgs/street.art/chris-barbalis-211599.jpg" alt="">
                     <h2>Street Art</h2>
                 </li>
-                <li class="photo-container">
+                <li id="space" class="album-pic-container">
                     <img class="album-img" src="imgs/NASA/nasa-43563.jpg" alt="">
                     <h2>Space</h2>
                 </li>
-                <li class="photo-container">
+                <li id="light" class="album-pic-container">
                     <img class="album-img" src="imgs/light/joshua-fuller-211271.jpg" alt="">
                     <h2>Light</h2>
                 </li>
-                <li class="photo-container">
+                <li id="landscape" class="album-pic-container">
                     <img class="album-img" src="imgs/Landscape/andy-matthews-217218.jpg" alt="">
                     <h2>Landscape</h2>
                 </li>
-                <li class="photo-container">
+                <li id="womensday" class="album-pic-container">
                     <img class="album-img" src="imgs/International Women's Day/jerry-kiesewetter-199731.jpg" alt="">
                     <h2>Women's Day</h2>
                 </li>
-                <li class="photo-container">
+                <li id="animals" class="album-pic-container">
                     <img class="album-img" src="imgs/animals/ray-hennessy-139969.jpg" alt="">
                     <h2>Animals</h2>
                 </li>
@@ -46,7 +46,7 @@
         </section>
         <!-- Page Two: Pictures-page       -->
         <!-- sidebar -->
-        <section class="photos-page">
+        <section class="page photos-page">
             <aside class="sidebar">
                 <ul class='sidebar-list'>
                     <li>Street Art</li>
@@ -59,9 +59,9 @@
             </aside>
             <section class="photos-container">
                 <!-- page two body               -->
-                <h3>Street Art</h3>
-                <section class="street-art">
-                    <ul class="album-container">
+
+                <section class="album-container street-art">
+                    <ul><h3>Street Art</h3>
                         <li class="photo-container">
                             <img class="album-img" src="imgs/street.art/chris-barbalis-211599.jpg" alt="">
                             <h2>Photo 1</h2>
@@ -89,7 +89,7 @@
                     </ul>
                 </section>
                 <section class="album-container space">
-                    <ul>
+                    <ul><h3>Space</h3>
                         <li class="photo-container">
                             <img src="" alt="">
                             <h2>Photo 1</h2>
@@ -117,7 +117,7 @@
                     </ul>
                 </section>
                 <section class="album-container light">
-                    <ul>
+                    <ul><h3>Light</h3>
                         <li class="photo-container">
                             <img src="" alt="">
                             <h2>Photo 1</h2>
@@ -145,7 +145,7 @@
                     </ul>
                 </section>
                 <section class="album-container landscape">
-                    <ul>
+                    <ul><h3>Landscape</h3>
                         <li class="photo-container">
                             <img src="" alt="">
                             <h2>Photo 1</h2>
@@ -173,7 +173,7 @@
                     </ul>
                 </section>
                 <section class="album-container womensday">
-                    <ul>
+                    <ul><h3>Women's Day</h3>
                         <li class="photo-container">
                             <img src="" alt="">
                             <h2>Photo 1</h2>
@@ -201,7 +201,7 @@
                     </ul>
                 </section>
                 <section class="album-container animals">
-                    <ul>
+                    <ul><h3>Animals</h3>
                         <li class="photo-container">
                             <img src="" alt="">
                             <h2>Photo 1</h2>
@@ -231,7 +231,7 @@
             </section>
         </section>
         <!-- page three: Single Pic Page -->
-        <section class="pic-page">
+        <section class="page pic-page">
           <div class="large-container">
             <h4>Photo 1</h4>
             <div class="backBtn"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back to Street Art Album</div>
@@ -239,10 +239,8 @@
           </div>
         </section>
 
-
-
-        <footer><i class="fa fa-picture-o" aria-hidden="true"></i></footer>
     </main>
+    <footer><i class="fa fa-picture-o" aria-hidden="true"></i></footer>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
