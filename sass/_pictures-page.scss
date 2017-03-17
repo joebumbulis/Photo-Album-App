@@ -1,5 +1,29 @@
 .photos-page {
+  display: none;
+};
+
+.streetart {
   // display: none;
+};
+
+.space {
+  display: none;
+};
+
+.light {
+  display: none;
+};
+
+.landscape {
+  display: none;
+};
+
+.womensday {
+  display: none;
+};
+
+.animals {
+  display: none;
 };
 
 .sidebar-list {
@@ -28,10 +52,18 @@
   z-index: -1;
 };
 
+h3 {
+  text-align: center;
+  color: $color-primary;
+  font-family: $secondary-font;
+  font-size: 3rem;
+}
+
 .photos-container {
   margin-left: 17%;
   @include grid-container;
   // @include grid-visual;
+  text-align: center;
 }
 
 .photo-container {
@@ -39,6 +71,9 @@
   @include grid-column(4);
   background: $color-five;
   margin-top: 1rem;
+
 };
+
+
 
 //create 18 total image containers with images (3 images per section so you can hide each section tied to a left side button)

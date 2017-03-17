@@ -1,0 +1,41 @@
+.pic-page {
+  // display: none;
+  @include grid-container;
+  // @include grid-visual;
+  background: $color-primary;
+  bottom: 0;
+}
+
+.large-container {
+  text-align: center;
+
+}
+
+.backBtn {
+  background: $color-five;
+  background-size: contain;
+  color: $color-primary;
+  width: 20%;
+  margin: 2rem 1rem 0 3rem;
+  float: left;
+  padding: .5rem;
+  border-radius: 5rem;
+}
+
+.fa-chevron-left {
+  margin-right: 1rem;
+}
+
+h4 {
+  display: inline-block;
+  margin: 1rem 0 2rem -14rem;
+  color: $color-five;
+  font-family: $secondary-font;
+  font-size: 3rem;
+}
+
+.large-img {
+  margin: 0 0 3rem 0;
+  @include grid-column(10);
+  @include grid-push(1);
+}

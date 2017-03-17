@@ -1,9 +1,10 @@
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   background: $color-four;
   width: 100%;
   text-align: right;
+  z-index: -1;
 }
 
 .fa-picture-o {
