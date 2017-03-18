@@ -11,7 +11,7 @@
 }
 
 // .street-art {
-//   display: block;
+//   display: none;
 // };
 //
 // .space {
@@ -41,7 +41,7 @@
   padding-left: .5rem;
 };
 
-.sidebar-list * {
+.sidebar-btn {
   width: 85%;
   background: $color-five;
   margin: .7rem 0 0 0;
@@ -58,7 +58,6 @@
   bottom: 0;
   top: 0;
   background: $color-secondary;
-  z-index: -1;
 };
 
 h3 {

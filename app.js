@@ -5,21 +5,28 @@ console.log(jQuery);
 // add CSS class .selected to page2,
 // remove  CSS selector class to correlating 'album container'- display none
 
-var $albums = $('.album-pic-container')
+var $albums = $('.album-pic-container');
 var $page = $('.page');
 var $pageTwo = $('.photos-page')
-console.log($page);
+var $sidebarBtn = $('.sidebar-btn');
 
 
 
 $albums.on('click', function(e){
   // $pageOne.removeClass('')
-  console.log(e);
+  // console.log(e);
   $page.removeClass('selected');
   $pageTwo.addClass('selected');
   var containerID = $(e.target).closest('.album-pic-container').attr('id');
-  console.log(containerID);
+  // console.log(containerID);
   $('.'+ containerID).addClass('selected');
+});
+
+$sidebarBtn.on('click', function(e){
+  console.log(e);
+  var btnClass = e.target.className;
+  console.log(btnClass);
+  $('.'+ btnClass).addClass('selected');
 });
 
 
