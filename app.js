@@ -24,7 +24,7 @@ $albums.on('click', function(e){
 
 $sidebarBtn.on('click', function(e){
   console.log(e);
-  var btnClass = e.target.className;
+  var btnClass = e.target.className
   console.log(btnClass);
   $('.'+ btnClass).addClass('selected');
 });
