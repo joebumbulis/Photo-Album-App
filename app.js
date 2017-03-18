@@ -9,24 +9,30 @@ var $albums = $('.album-pic-container');
 var $page = $('.page');
 var $pageTwo = $('.photos-page')
 var $sidebarBtn = $('.sidebar-btn');
+var $albumCtn = $('.album-container');
 
+console.log($sidebarBtn)
 
 
 $albums.on('click', function(e){
   // $pageOne.removeClass('')
-  // console.log(e);
+  console.log(e);
   $page.removeClass('selected');
   $pageTwo.addClass('selected');
   var containerID = $(e.target).closest('.album-pic-container').attr('id');
-  // console.log(containerID);
+  console.log(e.target);
+  console.log(containerID);
+  console.log($('.'+ containerID));
   $('.'+ containerID).addClass('selected');
 });
 
 $sidebarBtn.on('click', function(e){
+  console.log( this );
   console.log(e);
-  var btnClass = e.target.className
-  console.log(btnClass);
-  $('.'+ btnClass).addClass('selected');
+  $albumCtn.removeClass('selected');
+  var btn = $(e.target).attr('class');
+  console.log(btn);
+  $(btn).addClass('selected');
 });
 
 
