@@ -10,30 +10,43 @@ var $page = $('.page');
 var $pageTwo = $('.photos-page')
 var $sidebarBtn = $('.sidebar-btn');
 var $albumCtn = $('.album-container');
+var $pageThree = $('.pic-page');
+var $backBtn = $('.back-btn')
 
-console.log($sidebarBtn)
+console.log($backBtn);
 
 
 $albums.on('click', function(e){
   // $pageOne.removeClass('')
-  console.log(e);
+  // console.log(e);
   $page.removeClass('selected');
   $pageTwo.addClass('selected');
   var containerID = $(e.target).closest('.album-pic-container').attr('id');
-  console.log(e.target);
-  console.log(containerID);
-  console.log($('.'+ containerID));
+  // console.log(e.target);
+  // console.log(containerID);
+  // console.log($('.'+ containerID));
   $('.'+ containerID).addClass('selected');
 });
 
 $sidebarBtn.on('click', function(e){
-  console.log( this );
-  console.log(e);
+  // console.log( this );
+  // console.log(e);
   $albumCtn.removeClass('selected');
-  var btn = $(e.target).attr('class');
-  console.log(btn);
-  $(btn).addClass('selected');
+  var btn = $(e.target).attr('id');
+  // console.log(btn);
+  $('.' + btn).addClass('selected');
 });
+
+$albumCtn.on('click', function (e){
+  $pageTwo.removeClass('selected');
+  $pageThree.addClass('selected');
+
+})
+
+$backBtn.on('click', function(e){
+  $pageThree.removeClass('selected');
+  $pageTwo.addClass('selected');
+})
 
 
 //second page - pictures of open albums

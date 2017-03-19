@@ -5,6 +5,9 @@
   // @include grid-visual;
   background: linear-gradient($color-primary, $color-five);
   bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .large-container {
@@ -12,7 +15,7 @@
 
 }
 
-.backBtn {
+.back-btn {
   background: linear-gradient(to right, $color-four, $color-third);
   background-size: contain;
   color: $color-primary;
