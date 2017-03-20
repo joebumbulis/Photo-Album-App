@@ -40,7 +40,7 @@ $sidebarBtn.on('click', function(e){
 $albumCtn.on('click', function (e){
   $pageTwo.removeClass('selected');
   $pageThree.addClass('selected');
-
+  
 })
 
 $backBtn.on('click', function(e){

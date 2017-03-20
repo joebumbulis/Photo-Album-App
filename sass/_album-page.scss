@@ -8,6 +8,7 @@
 
 .album-page {
   @include grid-container;
+  position: relative;
 }
 
 .album-list {
